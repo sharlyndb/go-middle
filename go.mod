@@ -1,4 +1,4 @@
-module go-middle
+module github.com/goworkeryyt/go-middle
 
 go 1.17
 
