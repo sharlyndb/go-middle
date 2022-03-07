@@ -89,7 +89,7 @@ func OperateRecordHandler(retainDays int) gin.HandlerFunc {
 			_ = json.Indent(&str, m, "", "    ")
 			global.LOG.Info("访问记录" + str.String())
 		}
-		if err := OperateRecordServiceApp.CreateOperateRecord(record); err != nil {
+		if err := OperateRecordServiceApp.CreateOperateRecord(record,retainDays); err != nil {
 			global.LOG.Error("create operate record error:", zap.Any("err", err))
 		}
 	}
