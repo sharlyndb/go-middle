@@ -8,8 +8,8 @@ package record
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/goworkeryyt/go-core/global"
-	"go-middle/record/access"
-	"go-middle/record/operate"
+	"github.com/goworkeryyt/go-middle/record/access"
+	"github.com/goworkeryyt/go-middle/record/operate"
 	"go.uber.org/zap"
 )
 
